@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamPixelAI - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-wYGsOqv78dO8dbE9ZB2iOfTZ0rbXUD+Zx2BO88sPRqC1uhSRJljXt7McJvdGH+zQXc2ptSgGdcJkq8M8t4VVjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+    nav h1 {
+      font-size: 1.5rem;
+      color: #ff0077;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #f2f2f2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #ff3399;
+    }
+    main {
+      margin-top: 4rem;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #ff0077;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #ff3399;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,0,119,0.6);
+    }
+    .prompt-generator {
+      margin-top: 3rem;
+    }
+    .prompt-generator input {
+      width: 60%;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      margin-right: 1rem;
+    }
+    .prompt-generator button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #00cc99;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .prompt-generator button:hover {
+      background-color: #00e6b8;
+    }
+    .social-icons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.5rem;
+    }
+    .social-icons a {
+      color: #f2f2f2;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #ff3399;
+    }
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .gallery img, .prompt-generator input {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>DreamPixelAI</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Funzionalità</a></li>
+      <li><a href="#demo">Galleria</a></li>
+      <li><a href="#prompt">Prompt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header>
+      <h1>DreamPixelAI</h1>
+      <p>L'intelligenza artificiale che trasforma la tua immaginazione in immagini senza confini.</p>
+      <button class="cta-button">Inizia a creare</button>
+    </header>
+
+    <section id="features" class="features">
+      <h2>Perché DreamPixelAI?</h2>
+      <ul>
+        <li>🎨 Nessun limite creativo: esplora ogni universo possibile</li>
+        <li>⚡ Velocità istantanea: immagini in pochi secondi</li>
+        <li>🧠 IA addestrata su milioni di stili</li>
+        <li>🌐 Accessibile ovunque, 24/7</li>
+      </ul>
+    </section>
+
+    <section id="demo" class="demo">
+      <h2>Esempi di magia visiva</h2>
+      <div class="gallery">
+        <img src="placeholder1.jpg" alt="Immagine generata 1">
+        <img src="placeholder2.jpg" alt="Immagine generata 2">
+        <img src="placeholder3.jpg" alt="Immagine generata 3">
+      </div>
+    </section>
+
+    <section id="prompt" class="prompt-generator">
+      <h2>Genera la tua immagine</h2>
+      <p>Inserisci un prompt descrittivo e lascia che DreamPixelAI faccia il resto:</p>
+      <input type="text" placeholder="Es. Una città futuristica nel deserto al tramonto">
+      <button>Genera immagine</button>
+    </section>
+
+    <section id="cta" class="final-cta">
+      <h2>Se puoi immaginarlo, puoi vederlo</h2>
+      <p>Lascia che DreamPixelAI trasformi i tuoi pensieri in opere d'arte visive.</p>
+      <button class="cta-button">Provala ora</button>
+    </section>
+
+    <section id="social" class="social">
+      <h2>Seguici sui social</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DreamPixelAI - Realizzato da Cristian Battaglia Ferruggia</p>
+  </footer>
+</body>
+</html>
